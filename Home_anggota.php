@@ -25,7 +25,7 @@ $data = show("SELECT * FROM anggota ");
 <body>
 <?php 
 	session_start();
-    $_SESSION['Jml_Pinjaman']=['Jml_Pinjaman'];
+
  
 	// cek apakah yang mengakses halaman ini sudah login
 	if($_SESSION['level']==""){
@@ -53,7 +53,7 @@ $data = show("SELECT * FROM anggota ");
             <h2 class="display-4">Selamat datang , <?php echo $_SESSION['nama_lengkap']; ?></h2>
             <p class="lead">Anda telah berkunjung di sebuah website <b>Sistem Koperasi Simpan Pinjam.</b> </p>
             <p >Website ini mempermudah anda dalam melakukan sebuah simpanan  uang atau mengajukan pinjaman sejumlah uang. </p>
-            <p>pinjaman , <?php echo $_SESSION['Jml_Pinjaman']; ?></p>
+            
         
             
 
